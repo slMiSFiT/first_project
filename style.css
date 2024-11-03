@@ -23,7 +23,9 @@ body {
   align-items: center;
   gap: 2rem;
 }
-
+.container ul{
+    color: aliceblue;
+}
 .git-greeting {
   display: flex;
   gap: 10px;
