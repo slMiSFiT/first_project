@@ -1,0 +1,89 @@
+html {
+  background-image: url("space.jpg");
+  background-size: cover;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  font-size: 10px;
+  height: 100%;
+}
+
+body {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.git-greeting {
+  display: flex;
+  gap: 10px;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.git-greeting h1 {
+  color: orangered;
+  margin: 0;
+}
+
+.git-greeting:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.git-greeting svg {
+  transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.git-greeting:hover svg {
+  transform: scale(1.2);
+}
+
+.clock {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 7px solid;
+  border-radius: 50%;
+  width: 30rem;
+  height: 30rem;
+  padding: 2rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 3px #ffffff,
+    inset 0 0 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+}
+
+.hand {
+  border-radius: 2px;
+  width: 50%;
+  height: 6px;
+  background: orangered;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.39, -0.03, 0.63, 1.05);
+}
+
+.minute-hand {
+  height: 5px;
+}
+
+.second-hand {
+  height: 3px;
+}
